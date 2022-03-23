@@ -18,7 +18,7 @@
   <main>
     <section id="card">
       <!-- Rating state start -->
-      <div id="rating-state">
+      <div id="rating-state" class="">
         <div id="star-box">
           <img src="images/icon-star.svg" alt="Star icon" id="star-icon">
         </div>
@@ -33,23 +33,23 @@
         <form>
           <div id="radio-btn-group">
             <label>
-              <input type="radio" name="rating" value="one" id="radio-btn"> 
+              <input type="radio" name="rating" value="one" class="radio-btn"> 
               <span>1</span>
             </label>
             <label>
-              <input type="radio" name="rating" value="two" id="radio-btn"> 
+              <input type="radio" name="rating" value="two" class="radio-btn"> 
               <span>2</span>
             </label>
             <label>
-              <input type="radio" name="rating" value="three" id="radio-btn"> 
+              <input type="radio" name="rating" value="three" class="radio-btn"> 
               <span>3</span>
             </label>
             <label>
-              <input type="radio" name="rating" value="four" id="radio-btn"> 
+              <input type="radio" name="rating" value="four" class="radio-btn"> 
               <span>4</span>
             </label>
             <label>
-              <input type="radio" name="rating" value="five" id="radio-btn"> 
+              <input type="radio" name="rating" value="five" class="radio-btn"> 
               <span>5</span>
             </label>
           </div>
@@ -60,10 +60,10 @@
       <!-- Rating state end -->
 
       <!-- Thank you state start -->
-      <div id="thank-you-state">
+      <div id="thank-you-state" class="hide">
         <img src="images/illustration-thank-you.svg" alt="Thank you illustration" id="thank-you-img">
-        <div class="rating-display">
-          You selected <span></span> out of 5
+        <div id="rating-display">
+          You selected <span id="selected-rating"></span> out of 5
         </div>
         <h1>
           Thank you!
