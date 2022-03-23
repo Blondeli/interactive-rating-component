@@ -16,5 +16,142 @@
 }
 
 body {
+  background: var(--main-bg-color);
   font-family: "Overpass", sans-serif;
+}
+
+main {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
+  min-width: 100vw;
+}
+
+#card {
+  max-width: 412px;
+  width: 87.2%;
+}
+
+/* Rating state */
+#rating-state {
+  background: var(--card-bg-color);
+  border-radius: 15px;
+  padding: 1.5rem;
+}
+
+#rating-state #star-box {
+  align-items: center;
+  background: var(--button-bg-color);
+  border-radius: 50%;
+  display: flex;
+  height: 40px;
+  justify-content: center;
+  width: 40px;
+}
+
+#rating-state h1 {
+  color: white;
+  margin: 1rem 0 0.625rem 0;
+}
+
+#rating-state p {
+  color: var(--paragraph-color);
+  font-size: 0.875rem;
+  line-height: 1.375rem;
+  margin-bottom: 1.5rem;
+}
+
+/* Rating form */
+form #radio-btn-group {
+  display: flex;
+  justify-content: space-between;
+}
+
+form #radio-btn-group span {
+  align-items: center;
+  background: var(--button-bg-color);
+  border-radius: 50%;
+  color: var(--button-text-color);
+  display: flex;
+  font-size: 0.875rem;
+  font-weight: 700;
+  height: 42px;
+  justify-content: center;
+  transition: all 200ms ease-in-out;
+  width: 42px;
+}
+
+form #radio-btn-group span:hover {
+  background: var(--button-text-color);
+  color: white;
+  cursor: pointer;
+}
+
+form #radio-btn-group input:checked + span {
+  background: var(--primary-color);
+  color: white;
+}
+
+form #radio-btn-group #radio-btn {
+  display: none;
+}
+
+form #submit-btn {
+  background: var(--primary-color);
+  border: none;
+  border-radius: 22.5px;
+  color: white;
+  display: block;
+  font-weight: 700;
+  letter-spacing: 1.87px;
+  margin-top: 1.5rem;
+  padding: 0.75rem 0;
+  text-transform: uppercase;
+  transition: all 200ms ease-in-out;
+  width: 100%;
+}
+
+form #submit-btn:hover {
+  background: white;
+  color: var(--primary-color);
+  cursor: pointer;
+}
+
+/* Thank you state */
+#thank-you-state {
+  display: none;
+}
+
+@media (min-width: 470px) {
+  /* Rating state */
+  #rating-state {
+    padding: 2rem;
+  }
+
+  #rating-state #star-box {
+    height: 48px;
+    width: 48px;
+  }
+
+  #rating-state h1 {
+    margin: 1.875rem 0 0.4375rem 0;
+  }
+
+  #rating-state p {
+    font-size: 0.9375rem;
+    line-height: 1.5rem;
+  }
+
+  /* Rating form */
+  form #radio-btn-group span {
+    font-size: 1rem;
+    height: 51px;
+    width: 51px;
+  }
+
+  form #submit-btn {
+    font-size: 0.9375rem;
+    margin-top: 2rem;
+  }
 }
