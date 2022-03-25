@@ -65,6 +65,13 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 
 - I made custom radio buttons to create the rating form.
 
+- I learned how to add and remove classes from elements using Javascript
+
+```js
+document.getElementById("rating-state").classList.add("hide");
+document.getElementById("thank-you-state").classList.remove("hide");
+```
+
 ### Continued development
 
 Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
